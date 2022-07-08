@@ -7,24 +7,34 @@
         <h1>Запись на курсы программирования</h1>
         <form action="" style="width: 610px; border-top: 1px solid #888; border-bottom: 1px solid #888;"><br/>
             <label for="name">Имя:</label><br/>
-            <input type="text" id="name" placeholder="Андрей"/><br/><br/>
-            <input type="radio" id="radio_java"/>
+            <input type="text" id="name" name="name" placeholder="Андрей" required/><br/><br/>
+
+            <input type="radio" id="radio_java" name="language" value="radio_java" checked/>
             <label for="radio_java">Java</label>
-            <input type="radio" id="radio_cpp"/>
+
+            <input type="radio" id="radio_cpp" name="language" value="radio_cpp"/>
             <label for="radio_cpp">C++</label>
-            <input type="radio" id="radio_python"/>
+
+            <input type="radio" id="radio_python" name="language" value="radio_python"/>
             <label for="radio_python">Python</label>
-            <input type="radio" id="radio_php"/>
+
+            <input type="radio" id="radio_php" name="language" value="radio_php"/>
             <label for="radio_php">PHP</label>
-            <input type="radio" id="radio_js"/>
+
+            <input type="radio" id="radio_js" name="language" value="radio_js"/>
             <label for="radio_js">JavaScript</label><br/><br/>
+
             <label for="textarea_info">Дополнительная информация:</label><br/>
-            <textarea rows="4" cols="24" id="textarea_info" placeholder="Есть опыт программирования на Java"></textarea><br/><br/>
+            <textarea rows="4" cols="24" id="textarea_info" name="textarea_info" placeholder="Есть опыт программирования на Java"></textarea><br/><br/>
+
             <label for="password_word">Секретное слово:</label><br/>
-            <input type="password" id="password_word"/><br/><br/>
-            <input type="checkbox" id="checkbox_rules"/>
+            <input type="password" id="password_word" name="password_word" required/><br/><br/>
+            
+            <input type="checkbox" id="checkbox_rules" name="checkbox_rules" required/>
             <label for="checkbox_rules">С правилами ознакомился и согласен</label><br/><br/>
+
             <input type="submit" value="Отправить" name="submit"/>
+
             <input type="reset" value="Очистить"/><br/><br/>
         </form>
         <p>Made by andron13</p>

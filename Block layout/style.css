@@ -27,6 +27,7 @@ body {
     height: 365px;
     background-color: #fff;
     margin: 0 12px;
+    position: relative;
 }
 .card__image {
     height: 280px;
@@ -54,8 +55,10 @@ body {
 
 .card__button {
     cursor: pointer;
-    position: fixed;
-    transform: translate(232px, 256px);
+    position: absolute;
+    right: 12px;
+    bottom: 62px;
+    /*transform: translate(232px, 256px);*/
     border-radius: 50%;
     width: 45px;
     height: 45px;
